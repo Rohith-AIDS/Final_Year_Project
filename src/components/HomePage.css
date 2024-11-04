@@ -1,0 +1,202 @@
+/* HomePage.css */
+
+.landing-page {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Section */
+.hero-section {
+  background-color: #4a90e2; /* Change this to your preferred color */
+  color: white;
+  padding: 50px 20px;
+}
+
+.title-container h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.cta-button, .signout-button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button {
+  background-color: #f39c12; /* Orange button */
+  color: white;
+}
+
+.signout-button {
+  background-color: #e74c3c; /* Red button */
+  color: white;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  background-color: #f8f8f8;
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center the items */
+}
+
+.features h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure the heading takes full width */
+}
+
+.feature {
+  flex: 1 1 300px; /* Allow the feature boxes to grow and shrink */
+  margin: 20px;
+  max-width: 300px; /* Set a max width for each feature */
+  text-align: center; /* Center align text */
+  opacity: 0; /* Initially hidden for animation */
+  animation: fadeIn 1s ease-in-out forwards; /* Fade in animation for each feature */
+}
+
+.feature-icon {
+  width: 100px; /* Set width for icons */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.5em;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #555;
+}
+
+/* Dashboard Button */
+.dashboard-container {
+  margin: 30px 0;
+}
+
+.dashboard-button {
+  padding: 10px 20px;
+  background-color: #2ecc71; /* Green button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Transition for button */
+}
+
+.dashboard-button:hover {
+  background-color: #28a745; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Footer Section */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  margin: 0;
+}
+
+.footer-link {
+  color: #f39c12; /* Link color */
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+/* AI Interview Information Section */
+.ai-interview-info {
+  padding: 60px 20px; /* Increased padding for more space */
+  background-color: transparent; /* No background color */
+  text-align: left; /* Align text to the left */
+  max-width: 900px; /* Set a max width for better content flow */
+  margin: 40px auto; /* Center the section with spacing above and below */
+  animation: fadeIn 1s ease-in-out; /* Fade in animation for AI info */
+}
+
+.ai-interview-info h2 {
+  font-size: 3em; /* Larger heading for emphasis */
+  margin-bottom: 25px; /* Margin below the heading */
+  color: #2c3e50; /* Darker color for better contrast */
+}
+
+.ai-interview-info p {
+  font-size: 1.5em; /* Increased paragraph text for better readability */
+  line-height: 1.8; /* Increased line height for better spacing */
+  color: #34495e; /* Softer dark color */
+}
+
+.ai-interview-info ul {
+  list-style-type: disc; /* Disc bullets */
+  margin: 20px 0; /* Margin for spacing */
+  padding-left: 30px; /* Indent the list */
+}
+
+.ai-interview-info li {
+  margin-bottom: 20px; /* Space between list items */
+  font-size: 1.3em; /* Larger list items for clarity */
+  color: #2c3e50; /* Dark color for list items */
+}
+
+/* Optional: Add a subtle bottom border for emphasis */
+.ai-interview-info h2::after {
+  content: "";
+  display: block;
+  width: 80px; /* Width of the border */
+  height: 4px; /* Height of the border */
+  background-color: #3498db; /* Color of the border */
+  margin-top: 15px; /* Space above the border */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .ai-interview-info {
+    padding: 40px 15px; /* Adjusted padding for smaller screens */
+    margin: 20px auto; /* Adjusted margin */
+  }
+
+  .ai-interview-info h2 {
+    font-size: 2.5em; /* Slightly smaller heading on mobile */
+  }
+
+  .ai-interview-info p,
+  .ai-interview-info li {
+    font-size: 1.2em; /* Slightly smaller text on mobile */
+  }
+}

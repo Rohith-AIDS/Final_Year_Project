@@ -1,0 +1,163 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #cde2f7; /* Light background color for a clean look */
+    margin: 0;
+    padding: 0;
+}
+
+/* Dashboard Container */
+.dashboard {
+    width: 100%; /* Full width for the dashboard */
+    padding: 30px; /* Padding for the dashboard */
+    background-color: #9edc64; /* White background for the dashboard */
+    border-radius: 0; /* Remove rounded corners */
+    box-shadow: none; /* Remove shadow */
+    opacity: 0; /* Start invisible for animation */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 0.5s forwards; /* Animation for entrance */
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+    to {
+        opacity: 1; /* End visible */
+        transform: translateY(0); /* End at original position */
+    }
+}
+
+/* Title Styles */
+.dashboard-title {
+    font-size: 2.8em; /* Larger font size for the title */
+    color: #343a40; /* Dark gray color for contrast */
+    margin-bottom: 20px; /* Space below the title */
+    text-align: center; /* Centered title */
+}
+
+/* Quick Access Section */
+.quick-access {
+    margin-bottom: 40px; /* Space below quick access section */
+}
+
+/* Quick Access Subheading */
+.quick-access h2 {
+    font-size: 2.2em; /* Subheading size */
+    color: #495057; /* Softer dark color */
+    margin-bottom: 15px; /* Space below the subheading */
+    text-align: center; /* Centered subheading */
+}
+
+/* Tiles Container */
+.tiles-container {
+    display: grid; /* Use grid layout for tiles */
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Responsive tiles */
+    gap: 20px; /* Space between tiles */
+}
+
+/* Tile Styles */
+.tile {
+    background-color: #090d13; /* Bootstrap primary color */
+    color: white; /* Tile text color */
+    border-radius: 8px; /* Rounded corners for tiles */
+    padding: 10px; /* Padding inside tiles */
+    text-align: center; /* Centered text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Shadow for tiles */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    position: relative; /* Position for pseudo-element */
+}
+
+.tile:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Icon Styles */
+.icon {
+    font-size: 3em; /* Larger icon size */
+    margin-bottom: 10px; /* Space below the icon */
+}
+
+/* Progress Tracker Styles */
+.progress-tracker {
+    margin-bottom: 40px; /* Space below progress tracker section */
+}
+
+/* Progress Tracker Subheading */
+.progress-tracker h2 {
+    font-size: 2.2em; /* Subheading size */
+    color: #495057; /* Softer dark color */
+    margin-bottom: 15px; /* Space below the subheading */
+}
+
+/* Progress Chart Styles */
+.progress-chart {
+    background-color: #f8f9fa; /* Light background for the chart */
+    border-radius: 8px; /* Rounded corners for the chart */
+    padding: 20px; /* Padding inside the chart */
+    animation: slideIn 0.5s ease forwards; /* Animation for entrance */
+}
+
+/* Slide In Animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px); /* Start from left */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateX(0); /* End at original position */
+        opacity: 1; /* End visible */
+    }
+}
+
+/* Progress Bar Styles */
+.progress-bar {
+    background-color: #007bff; /* Progress bar color */
+    border-radius: 5px; /* Rounded corners for the progress bar */
+    height: 30px; /* Height of the progress bar */
+    width: 100%; /* Full width */
+}
+
+.progress {
+    background-color: #28a745; /* Green color for progress */
+    height: 100%; /* Full height */
+    border-radius: 5px; /* Rounded corners for progress */
+    transition: width 0.4s ease; /* Smooth transition for width */
+}
+
+/* Recommended Practice Styles */
+.recommended-practice h2 {
+    font-size: 2.2em; /* Subheading size */
+    color: #495057; /* Softer dark color */
+    margin-bottom: 15px; /* Space below the subheading */
+}
+
+.recommended-practice ul {
+    list-style-type: disc; /* Disc bullets */
+    padding-left: 20px; /* Indent list */
+    animation: fadeIn 0.5s ease forwards; /* Animation for entrance */
+}
+
+.recommended-practice li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.2em; /* Font size for list items */
+    color: #343a40; /* Dark gray color */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: white; /* White text color */
+    padding: 20px; /* Padding inside footer */
+    text-align: center; /* Centered text in footer */
+    margin-top: 40px; /* Space above footer */
+}
+
+/* Footer Link Styles */
+.footer-link {
+    color: #f8f9fa; /* Light color for footer links */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
